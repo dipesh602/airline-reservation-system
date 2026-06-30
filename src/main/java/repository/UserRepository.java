@@ -9,10 +9,6 @@ import model.User;
 public interface UserRepository extends JpaRepository<User, Long>{
 	
 	User findByEmail(String email);
-	boolean existByEmail(String email);
-	//List<User> findAllUser();
-	//User saveUser();
-	//void deleteById(Long id);
-	
+	boolean existsByEmail(String email);
 	
 }
